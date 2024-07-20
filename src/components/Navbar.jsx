@@ -4,7 +4,7 @@ import { Button } from './Button'
 export const Navbar = () => {
   return (
     <>
-    <header className='relative text-white h-[80px]'>
+    <header className=' sticky top-0 bg-transparent text-white h-[80px] z-10'>
         <div className='absolute inset-0 bg-gradient-to-r from-black via-custom-blue to-black opacity-1' style={{marginRight: '-40%'}}></div>
         <div className='relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 flex justify-between items-center h-full' >
             <div className='flex items-center'>

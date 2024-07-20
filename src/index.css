@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+
 :root {
   background-color: #242424;
 
@@ -11,5 +14,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   overflow: hidden;
+
+  font-family: 'Outfit', sans-serif;
 }
 
