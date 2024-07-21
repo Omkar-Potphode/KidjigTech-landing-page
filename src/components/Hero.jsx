@@ -1,6 +1,7 @@
 import React from 'react';
 import { Background } from '../assets';
 import { Button } from './Button';
+import BoxReveal from './BoxReveal';
 
 export const Hero = () => {
   return (
@@ -9,13 +10,15 @@ export const Hero = () => {
         <div className='circlePosition w-[300px] h-[150px] md:w-[970px] md:h-[400px] bg-custom-blue rounded-[100%] absolute z-1 top-[-10%] md:top-[-10%] left-[-10%] md:left-[65%] translate-x-[-50%] translate-y-[-50%] blur-[90px]' />
 
         <div className="absolute top-[3%] md:top-[120px] left-[5%] md:left-[279px] max-w-[90%] md:max-w-3xl h-auto text-center md:text-left">
-          <h1 className="text-white text-4xl md:text-6xl leading-tight">
-            Empowering Lives Through <br />
-            Innovative {""} <span className="relative inline-block text-white font-bold">
-              AI
-              <span className="absolute left-0 bottom-0 w-full h-1 bg-blue-500 transform translate-y-1" style={{ width: '95%', height: '10%' }}></span>
-            </span> {""} Technologies.
-          </h1>
+          <BoxReveal boxColor={"#6881FF"} duration={0.5}>
+            <h1 className="text-white text-4xl md:text-6xl leading-tight">
+              Empowering Lives Through <br />
+              Innovative {""} <span className="relative inline-block text-white font-bold">
+                AI
+                <span className="absolute left-0 bottom-0 w-full h-1 bg-blue-500 transform translate-y-1" style={{ width: '95%', height: '10%' }}></span>
+              </span> {""} Technologies.
+            </h1>
+          </BoxReveal>
         </div>
 
         <div className='absolute top-[33%] md:top-[265px] left-[5%] md:left-[279px] w-[90%] md:w-[900px]'>
@@ -43,6 +46,7 @@ export const Hero = () => {
             From Ideas to
           </p>
         </div>
+
       </section>
     </>
   );
